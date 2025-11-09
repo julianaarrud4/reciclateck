@@ -1,28 +1,81 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   border: solid green 5px;
   height: 10vh;
 }
-
-header h1 {
-  background-color: red;
-}
-
 header nav {
-  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  height: 10vh;
 }
-/*# sourceMappingURL=style.css.map */
+header nav a {
+  color: #4B5563;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.btnVerde {
+  background-color: #21C05C;
+  padding: 20px;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+.caixaLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+.caixaLogo h1 {
+  color: #1f2937;
+  font-size: 2.5rem;
+}
+
+.apresentacao {
+  height: 50vh;
+  width: 50%;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.produtosDisponiveis {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+.produtosDisponiveis article {
+  border: solid #16a34a;
+  width: 18%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.produtosDisponiveis article img {
+  width: 100%;
+}
+.produtosDisponiveis article p {
+  text-align: center;
+  border: solid;
+  width: 90%;
+}
+.produtosDisponiveis article button {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}/*# sourceMappingURL=style.css.map */
