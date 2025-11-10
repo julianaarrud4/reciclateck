@@ -64,13 +64,6 @@ header {
     // flex-direction: row-reverse;
 }
 
-
-
-
-
-
-
-
 .produtosDisponiveis {
     display: flex;
     justify-content: space-around;
@@ -101,6 +94,40 @@ header {
         button {
             margin-bottom: 2rem;
             padding: 1rem;
+        }
+    }
+}
+
+//medida das telas responsivas//
+@media(max-width:768px) {
+   
+    header{
+        flex-direction: column;
+        height: auto;
+        nav {
+            width: 100%;
+            justify-content: space-around;
+            margin: 1rem 0;
+        }
+    }
+    .caixaLogo{
+        
+        width: 50%;
+        h1{
+            font-size: 2rem;
+
+         }
+        }
+    }
+
+@media screen and (max-width:768px){
+    .produtosDisponiveis{
+        flex-direction: column;
+        height: auto;
+
+        article{
+            width: 80%;
+            margin: 1rem 0;
         }
     }
 }

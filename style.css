@@ -78,4 +78,32 @@ header nav a {
 .produtosDisponiveis article button {
   margin-bottom: 2rem;
   padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  header nav {
+    width: 100%;
+    justify-content: space-around;
+    margin: 1rem 0;
+  }
+  .caixaLogo {
+    width: 50%;
+  }
+  .caixaLogo h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .produtosDisponiveis {
+    flex-direction: column;
+    height: auto;
+  }
+  .produtosDisponiveis article {
+    width: 80%;
+    margin: 1rem 0;
+  }
 }/*# sourceMappingURL=style.css.map */
