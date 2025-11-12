@@ -16,7 +16,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 35%;
+  width: 40%;
   height: 10vh;
 }
 header nav a {
@@ -43,13 +43,37 @@ header nav a {
   font-size: 2.5rem;
 }
 
-.apresentacao {
-  height: 50vh;
-  width: 50%;
-  border: solid;
+.PrimeiraSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+.PrimeiraSection section {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+.PrimeiraSection section h2 {
+  font-size: 3.75rem;
+  width: 60%;
+  border: solid;
+}
+.PrimeiraSection section p {
+  font-size: 1.25rem;
+  color: #4B5563;
+  margin-bottom: 2rem;
+  width: 65%;
+}
+
+.boxBtnsPrimeiraSection {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.boxBtnsPrimeiraSection button {
+  padding: 30px 40px;
+  cursor: pointer;
 }
 
 .produtosDisponiveis {
@@ -83,12 +107,13 @@ header nav a {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    height: auto;
+    height: 18vh;
   }
   header nav {
-    width: 100%;
-    justify-content: space-around;
-    margin: 1rem 0;
+    width: 90%;
+  }
+  header nav a {
+    font-size: 0.8rem;
   }
   .caixaLogo {
     width: 50%;
@@ -96,14 +121,40 @@ header nav a {
   .caixaLogo h1 {
     font-size: 2rem;
   }
+  .PrimeiraSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .PrimeiraSection img {
+    width: 50vw;
+  }
+  .PrimeiraSection section {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+  }
+  .PrimeiraSection section h2 {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .PrimeiraSection section p {
+    width: 100%;
+    text-align: center;
+  }
+  .boxBtnsPrimeiraSection {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .boxBtnsPrimeiraSection button {
+    padding: 10px 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   .produtosDisponiveis {
     flex-direction: column;
-    height: auto;
   }
   .produtosDisponiveis article {
-    width: 80%;
-    margin: 1rem 0;
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
