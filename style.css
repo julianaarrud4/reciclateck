@@ -47,12 +47,14 @@ header nav a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 80vh;
+  height: 70vh;
+  border: solid #ff0000;
 }
 .PrimeiraSection section {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  border: solid green;
 }
 .PrimeiraSection section h2 {
   font-size: 3.75rem;
@@ -64,16 +66,35 @@ header nav a {
   color: #4B5563;
   margin-bottom: 2rem;
   width: 65%;
+  border: solid;
 }
 
 .boxBtnsPrimeiraSection {
   display: flex;
   justify-content: space-between;
   width: 40%;
+  border: solid;
 }
 .boxBtnsPrimeiraSection button {
   padding: 30px 40px;
   cursor: pointer;
+}
+
+.dadosNumericos {
+  height: 20vh;
+}
+.dadosNumericos div {
+  width: 25%;
+  height: 12vh;
+  justify-content: space-evenly;
+}
+.dadosNumericos div h2 {
+  font-size: 1.8rem;
+}
+.dadosNumericos div p {
+  font-size: 0.8rem;
+  border: solid;
+  text-align: center;
 }
 
 .produtosDisponiveis {
@@ -104,52 +125,6 @@ header nav a {
   padding: 1rem;
 }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    height: 18vh;
-  }
-  header nav {
-    width: 90%;
-  }
-  header nav a {
-    font-size: 0.8rem;
-  }
-  .caixaLogo {
-    width: 50%;
-  }
-  .caixaLogo h1 {
-    font-size: 2rem;
-  }
-  .PrimeiraSection {
-    flex-direction: column;
-    align-items: center;
-  }
-  .PrimeiraSection img {
-    width: 50vw;
-  }
-  .PrimeiraSection section {
-    display: flex;
-    justify-content: space-evenly;
-    height: 50vh;
-  }
-  .PrimeiraSection section h2 {
-    width: 100%;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .PrimeiraSection section p {
-    width: 100%;
-    text-align: center;
-  }
-  .boxBtnsPrimeiraSection {
-    width: 100%;
-    justify-content: space-evenly;
-  }
-  .boxBtnsPrimeiraSection button {
-    padding: 10px 20px;
-  }
-}
 @media screen and (max-width: 768px) {
   .produtosDisponiveis {
     flex-direction: column;
